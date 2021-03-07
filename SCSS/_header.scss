@@ -251,21 +251,23 @@ $btnHeight: 2px;
       transition: all 300ms 0 ease;
       width         : 100vw;
       position: absolute;
-      top           : 50px;
-      background    : #fff;
+      background    :#fff;
       display       : flex;
       flex-direction: column;
       align-items   : center;
       z-index       : 100;
       overflow-y    : auto;
-      display: none;    //* →最初はアコーディオンの画面を隠す */
+      left: 0%;
+      visibility: hidden; // メインメニューをOpenする為に必要
+      opacity: 0;   // メインメニューをOpenする為に必要
+      transition: .3s;
       
-      
-      
-
       &.is-open {
-      display: block;
       left: 0%; 
+      
+      
+      visibility: visible;  // メインメニューをOpenする為に必要
+      opacity: 1;           // メインメニューをOpenする為に必要
       
        
 
@@ -320,12 +322,11 @@ $btnHeight: 2px;
         height: auto; /* →子要素を挿入する為、高さはautoとする */
         color: #131D34;
         background-color:#fff;
-        transition: .3s;
+        transition: .5s;
         
        
 /////////////ホバーしたら「-」と変更 /////  
         > a {
-          
           display: block;
           width: 100%;
           padding: 15px;
