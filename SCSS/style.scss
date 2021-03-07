@@ -1,0 +1,47 @@
+// 共通部分
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;        /* 1rem ＝ 10pxと全体のコードは変換する */
+}
+
+body {
+  background-color: rgb(255,255,255);
+  box-sizing: border-box;
+  color: rgb(18,18,18);
+  font-family: "Noto Sans JP", MyYuGothicM, YuGothic, -apple-system, BlinkMacSystemFont, "Hiragino kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif;    
+  font-size: 1.6rem;
+  line-height: 1.6;
+  position: relative;
+  overflow: scroll;   /* サイトの縦行のスクロール */
+
+}
+
+img {
+  vertical-align:middle;
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+ list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0 ;
+  margin-bottom: .5rem ;
+}
+
+
+// // ヘッダー部分
+
+ @import 'header';
+
+// メイン部分
+
+ @import 'main';
+
+ 

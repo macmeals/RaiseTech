@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang ="ja">
+ <head>
+
+  <!-- // 全体をUTF-8に指定 -->
+  <meta charset="UTF-8">
+
+  <!-- レスポンシブ対応でViewPointを指定。width=device-width、initial-scale=1は端末毎に倍率を調整。 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ファビコンのリンクを設定。 -->
+  <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+
+  <!-- リセットCSSを設定。基本的に冒頭に持ってくる。 -->
+  <link rel ="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+  <!-- Googleフォント:Noto Sans JPを設定。300,400,500,700.900を指定 -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> -->
+
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet"> -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+
+
+  <!-- タイトルとサイトの説明文を設定。（検索の時に表示される文を表示 -->
+  <title>RaiseTech（レイズテック） | 最速で稼げるプロになるエンジニアリングスクール</title>
+  <meta name="description" content="最速で「稼げる」エンジニアになるためのエンジニアリングスクール RaiseTech(レイズテック)。徹底した現場主義と挫折しないサポートで、現役講師の授業をオンラインで好きな時に受講できます。">
+
+  <!-- Font Awesome 5 free を読み込む -->
+  <link href="/CSS/all.min.css" rel="stylesheet">
+
+  <!-- スタイルシートを適応する -->
+  <link rel="stylesheet"  href="CSS/style.css" type="text/css" media="all">
+
+ </head>
+
+ <body >
+
+  <header class="Header" role="banner">
+  <!-- ヘッダーロゴと説明 -->
+   <div class ="Header__title">
+    <P>
+     <a href="/index.html">
+      <img src="image/header-logo.svg" alt="ロゴ：RaiseTech">
+      <span>最速で
+        <strong>「稼げる」</strong>プロになる<br>
+        エンジニアリングスクール
+      </span>
+     </a>
+    </P>  
+   </div>
+  <!-- ここまで -->
+
+  <!--サイトのメインのリンクとサブのリンク  -->
+   <div class="Header__link">
+     <button class="p-ham_ger  is-hamburger"><span>menuボタン</span></button>
+   <!-- メインメニュー -->
+     <ul class="Main-Nav" >
+       <li>
+         <a href ="#">はじめての方へ</a>
+         <ul class="sub-nav" >
+          <li><a href ="#">マンガでわかるRaiseTech</a></li>
+          <li><a href ="#">サポート体制とトライアル受講</a></li>
+          <li><a href ="#">就職・転職支援制度</a></li>
+          <li><a href ="#">ご利用の流れ</a></li>
+         </ul>
+        
+       </li>
+       <li>
+         <a href ="#">コース案内</a>
+         <ul class="sub-nav" >
+          <li><a href ="#">マーケティングコース</a></li>
+          <li><a href ="#">デザインコース</a></li>
+          <li><a href ="#">WordPress副業コース</a></li>
+          <li><a href ="#">AWSフルコース</a></li>
+          <li><a href ="#">AWS自動化フルコース</a></li>
+          <li><a href ="#">Javaフルコース</a></li>
+          <li><a href ="#">Javaフレームワークコース</a></li>
+         </ul>
+       </li>
+       <li>
+         <a href ="#">講師紹介</a>
+       </li>
+       <li>
+         <a href ="#">卒業生の声・実績</a>
+         <ul class="sub-nav" >
+          <li><a href ="#">卒業生の声</a></li>
+          <li><a href ="#">転職・案件実績</a></li>
+         </ul>
+       </li>
+       <li>
+         <a href ="#">メディア</a>
+         <ul class="sub-nav" >
+          <li><a href ="#">動画一覧</a></li>
+          <li><a href ="#">掲載記事一覧</a></li>
+         </ul>
+       </li>
+       <li>
+         <a href ="#">サポート</a>
+         <ul class="sub-nav" >
+          <li><a href ="#">よくあるご質問</a></li>
+          <li><a href ="#">お問い合わせ</a></li>
+         </ul>
+       </li>
+       <li >
+         <a href ="#">受講お申し込み</a>
+       </li>
+     </ul> 
+   </div>
+   <!-- ここまで -->
+
+   <!-- ボタンを押すと「×」となるJQueryを読み込む -->
+   <script src="js/jquery-3.4.1.min.js"></script>
+   <script src="js/hamburger.js"></script>
+   
+  </header>
+
+  <!-- topのメインページ -->
+  <main class="main">
+   <article>
+    <div class="fir-head">   <!-- 3枚目の画像（これはスクロールしても固定） -->
+     <div class ="fir_main fir_layer1">
+      <div class="fir_body">
+       <h1 class="fir_title">
+        <img src="/image/header-logo.svg" alt="ロゴ：RaiseTech">
+       </h1>
+       <P>はじめまして。RaiseTech（レイズテック）は
+        <br>
+          最速で「稼げる」エンジニアになるための、
+        <br>
+          実践的なWebエンジニアリングスクールです
+       </P>
+       <p class="Btn_highlight">
+        <a href="#">マンガでわかるRaiseTech</a>
+       </p> 
+      </div>
+     </div>
+     <div class="fir_main fir_layer2"> 
+     </div>
+    </div>
+
+    <!-- ここから黒のページ -->
+    <div class ="sec_main">
+     <div class ="Wrap_three Wrap_three_wide">
+     <div class="recommend_all">
+      <!-- 「現場主義」のアイコン -->
+      <div class="recommend_entry">
+       <div class="recommend_title">
+        <p class ="recommend_icon">
+          <i class="far fa-check-circle"></i>  <!-- →Font Awesome無償版を利用 -->
+        </p>
+        <p>現場主義</p>
+       </div>
+       <div class="recommend_body">
+        <p>「プログラム」だけでは稼げない！ 現場で求められる「技術」のみ教えます。</p>
+       </div>
+      </div>
+      <!-- ここまで -->
+
+      <!-- 「現役講師」のアイコン -->
+      <div class="recommend_entry">
+        <div class="recommend_title">
+         <p class ="recommend_icon">
+          <i class="far fa-check-circle"></i>  <!-- →Font Awesome無償版を利用 -->
+         </p>
+         <p>現役講師</p>
+        </div>
+        <div class="recommend_body">
+         <p>「今、求められている技術」をリアルタイムに教えてくれる、現役の技術者だけが講師です。</p>
+        </div>
+      </div>
+      <!-- ここまで -->
+
+      <!-- 「徹底サポート」のアイコン -->
+      <div class="recommend_entry">
+        <div class="recommend_title">
+         <p class ="recommend_icon">
+          <i class="far fa-check-circle"></i>  <!-- →Font Awesome無償版を利用 -->
+         </p>
+         <p>徹底サポート</p>
+        </div>
+        <div class="recommend_body">
+         <p>期間中の質疑応答無制限！個別進捗管理！挫折させないサポートを徹底します。</p>
+        </div>
+      </div>
+      <!-- ここまで -->
+
+     </div>
+     </div>
+    </div>
+      
+   <!-- ここまで黒のページ -->
+
+
+
+   </article>
+  </main>  
+
+ </body>
+
+</html>
