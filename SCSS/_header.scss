@@ -187,9 +187,6 @@ $btnHeight: 2px;
 	}
 }
 
-// body.is-open {
-// 	position: fixed;
-// }
 
 
 // 1200px以下はハンバーガーメニュを見せるので、メインメニューを見せない
@@ -258,22 +255,19 @@ $btnHeight: 2px;
       z-index       : 100;
       overflow-y    : auto;
       left: 0%;
-      visibility: hidden; // メインメニューをOpenする為に必要
-      opacity: 0;   // メインメニューをOpenする為に必要
+      visibility: hidden; // メインメニューをアニメでOpenする為に必要
+      opacity: 0;   // メインメニューをアニメOpenする為に必要
       transition: .3s;
       
       &.is-open {
       left: 0%; 
-      
-      
-      visibility: visible;  // メインメニューをOpenする為に必要
-      opacity: 1;           // メインメニューをOpenする為に必要
-      
-       
+      visibility: visible;  // メインメニューをアニメでOpenする為に必要
+      opacity: 1;           // メインメニューをアニメOpenする為に必要
 
         > li { height: 50px; 
           width: 100%;
           position  : relative;
+          transition: .5s;
 
           > a {
           
@@ -316,15 +310,15 @@ $btnHeight: 2px;
           display: none;
         }
 
-///////ここからホバー処理 //////////  
+///////ここから「はじめまして」等のホバー処理 //////////  
        > li:hover {
-        display: block;
+        // display: block;
+        visibility: visible;  // subメニューをアニメでOpenする為に必要
+        opacity: 1;    // subメニューをアニメでOpenする為に必要
         height: auto; /* →子要素を挿入する為、高さはautoとする */
         color: #131D34;
         background-color:#fff;
-        transition: .5s;
-        
-       
+
 /////////////ホバーしたら「-」と変更 /////  
         > a {
           display: block;
@@ -356,11 +350,15 @@ $btnHeight: 2px;
 
 /////////////ここからアコーディオン/////  
         >ul.sub-nav { 
-               display: block;
+              visibility: visible;  
+              opacity: 1;            
+              transition: .6s;
+              //  display: block;
                top:50px;
                position: static; /* position: absolute; を削除*/ 
-         >li {  display: block;
+         >li {  display: block; 
                 height: 50px;
+              
 
           > a{
               width: auto;

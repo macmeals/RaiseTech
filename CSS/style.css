@@ -312,6 +312,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 50px;
     width: 100%;
     position: relative;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   .Header__link .Main-Nav.is-open > li > a {
     display: block;
@@ -344,13 +346,12 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   .Header__link .Main-Nav.is-open > li:hover {
-    display: block;
+    visibility: visible;
+    opacity: 1;
     height: auto;
     /* →子要素を挿入する為、高さはautoとする */
     color: #131D34;
     background-color: #fff;
-    -webkit-transition: .5s;
-    transition: .5s;
   }
   .Header__link .Main-Nav.is-open > li:hover > a {
     display: block;
@@ -379,7 +380,10 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   .Header__link .Main-Nav.is-open > li:hover > ul.sub-nav {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: .6s;
+    transition: .6s;
     top: 50px;
     position: static;
     /* position: absolute; を削除*/
