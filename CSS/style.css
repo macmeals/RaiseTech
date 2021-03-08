@@ -345,6 +345,15 @@ h1, h2, h3, h4, h5, h6 {
     /* 「受験はこちら」を消す */
     display: none;
   }
+  .Header__link .Main-Nav.is-open ul.sub-nav > li {
+    display: block;
+    height: 0px;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .Header__link .Main-Nav.is-open ul.sub-nav > li > a {
+    display: none;
+  }
   .Header__link .Main-Nav.is-open > li:hover {
     visibility: visible;
     opacity: 1;
@@ -382,8 +391,6 @@ h1, h2, h3, h4, h5, h6 {
   .Header__link .Main-Nav.is-open > li:hover > ul.sub-nav {
     visibility: visible;
     opacity: 1;
-    -webkit-transition: .6s;
-    transition: .6s;
     top: 50px;
     position: static;
     /* position: absolute; を削除*/
@@ -393,11 +400,14 @@ h1, h2, h3, h4, h5, h6 {
     height: 50px;
   }
   .Header__link .Main-Nav.is-open > li:hover > ul.sub-nav > li > a {
+    display: block;
     width: auto;
     height: 50px;
     white-space: nowrap;
     background-color: #fff;
     padding-left: 25px;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   /* -------.Header__link */
 }

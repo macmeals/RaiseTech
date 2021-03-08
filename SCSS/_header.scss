@@ -264,7 +264,7 @@ $btnHeight: 2px;
       visibility: visible;  // メインメニューをアニメでOpenする為に必要
       opacity: 1;           // メインメニューをアニメOpenする為に必要
 
-        > li { height: 50px; 
+        > li { height: 50px;   // 「初めての方へ」等
           width: 100%;
           position  : relative;
           transition: .5s;
@@ -309,10 +309,23 @@ $btnHeight: 2px;
        >li:last-child {  /* 「受験はこちら」を消す */
           display: none;
         }
+      
+      ul.sub-nav {   ///////サブメニューの表示を消す
+         > li {
+            display: block;
+            height: 0px;
+            transition: .5s;
+            > a {
+              display: none;
+            }
+
+         }
+      }
+
+
 
 ///////ここから「はじめまして」等のホバー処理 //////////  
        > li:hover {
-        // display: block;
         visibility: visible;  // subメニューをアニメでOpenする為に必要
         opacity: 1;    // subメニューをアニメでOpenする為に必要
         height: auto; /* →子要素を挿入する為、高さはautoとする */
@@ -352,20 +365,19 @@ $btnHeight: 2px;
         >ul.sub-nav { 
               visibility: visible;  
               opacity: 1;            
-              transition: .6s;
-              //  display: block;
                top:50px;
                position: static; /* position: absolute; を削除*/ 
          >li {  display: block; 
                 height: 50px;
               
 
-          > a{
+          > a{display: block;
               width: auto;
               height: 50px;
               white-space: nowrap;
               background-color: #fff;
               padding-left: 25px;
+              transition: .5s;
              
 
           } /////////  ----- a
@@ -382,8 +394,4 @@ $btnHeight: 2px;
     } /* -------.Main_Nav */
   }   /* -------.Header__link */
   
-
-  // li.apply_class {
-  //     height: 300px;
-  //    }
   }
